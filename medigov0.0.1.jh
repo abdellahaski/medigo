@@ -1,0 +1,89 @@
+entity MyUser {
+    username String
+    password String
+    email String
+    active Boolean
+    firstName String
+    lastName String
+    cin String
+  	type String
+    currentInsurance String
+}
+
+
+entity Appointment {
+	dateTime ZonedDateTime
+    notes String
+}
+
+entity Cabinet{
+	name String
+    address String
+    coordinates String
+    speciality String
+}
+
+entity Consultation {
+	type String
+    cost BigDecimal
+    advance BigDecimal
+}
+
+entity Prescription {
+	date ZonedDateTime
+}
+
+entity DrugLine {
+	drug Drug
+    doseMatin Integer
+    doseMidi Integer
+    doseSoir Integer
+    afterBefore String
+    duration Integer   
+}
+entity CustomLine{
+	content String
+}
+
+entity Drug{
+	label String
+    type String
+    validated Boolean
+    //cabinetIds List<String>   
+}
+entity OneString{
+	content String
+}
+
+entity MedicalCertificat{
+	date ZonedDateTime
+    startDate ZonedDateTime
+    endDate ZonedDateTime
+    days Integer
+    urlId String
+}
+
+entity Insurance {
+	company String
+    affiliationNumber String
+}
+
+relationship OneToMany {
+	MyUser{appointements} to Appointment{patient}
+    Cabinet{appointements} to Appointment{cabinet}
+    Cabinet{doctors} to MyUser{cabinet}
+    Cabinet{assistants} to MyUser{cabinet}
+    MyUser{consultations} to Consultation{doctor}
+    Consultation{medicalCertificats} to MedicalCertificat{consultation}
+    Consultation{appointements} to Appointment{consultation}
+    Consultation{prescriptions} to Prescription{consultation}
+    Consultation{insurances} to Insurance{consultation}
+    Prescription{drugsLines} to DrugLine{Prescription}
+    Prescription{customLines} to CustomLine{Prescription}
+    Drug{cabinetIds} to OneString
+}
+
+
+service * with serviceImpl
+// Set an angular suffix
+// angularSuffix * with mySuffix
