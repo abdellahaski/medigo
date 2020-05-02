@@ -1,0 +1,33 @@
+{
+    "name": "Insurance",
+    "fields": [
+        {
+            "fieldName": "company",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "affiliationNumber",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "consultation",
+            "otherEntityRelationshipName": "insurances",
+            "relationshipName": "consultation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502235800",
+    "entityTableName": "insurance",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

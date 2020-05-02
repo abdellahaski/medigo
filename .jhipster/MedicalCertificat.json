@@ -1,0 +1,45 @@
+{
+    "name": "MedicalCertificat",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "days",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "urlId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "consultation",
+            "otherEntityRelationshipName": "medicalCertificats",
+            "relationshipName": "consultation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502235700",
+    "entityTableName": "medical_certificat",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

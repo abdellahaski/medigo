@@ -1,0 +1,28 @@
+{
+  "mediGoApp": {
+    "drugLine": {
+      "home": {
+        "title": "Drug Lines",
+        "createLabel": "Create a new Drug Line",
+        "createOrEditLabel": "Create or edit a Drug Line",
+        "notFound": "No Drug Lines found"
+      },
+      "created": "A new Drug Line is created with identifier {{ param }}",
+      "updated": "A Drug Line is updated with identifier {{ param }}",
+      "deleted": "A Drug Line is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Drug Line {{ id }}?"
+      },
+      "detail": {
+        "title": "Drug Line"
+      },
+      "doseMatin": "Dose Matin",
+      "doseMidi": "Dose Midi",
+      "doseSoir": "Dose Soir",
+      "afterBefore": "After Before",
+      "duration": "Duration",
+      "drug": "Drug",
+      "prescription": "Prescription"
+    }
+  }
+}

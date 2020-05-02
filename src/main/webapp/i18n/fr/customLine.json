@@ -1,0 +1,23 @@
+{
+  "mediGoApp": {
+    "customLine": {
+      "home": {
+        "title": "CustomLines",
+        "createLabel": "Créer un nouveau Custom Line",
+        "createOrEditLabel": "Créer ou éditer un Custom Line",
+        "notFound": "Aucun Custom Line trouvé"
+      },
+      "created": "Un nouveau Custom Line a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Custom Line avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Custom Line avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Custom Line {{ id }} ?"
+      },
+      "detail": {
+        "title": "Custom Line"
+      },
+      "content": "Content",
+      "prescription": "Prescription"
+    }
+  }
+}

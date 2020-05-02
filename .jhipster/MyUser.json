@@ -1,0 +1,80 @@
+{
+    "name": "MyUser",
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentInsurance",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "appointment",
+            "otherEntityRelationshipName": "patient",
+            "relationshipName": "appointements"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "consultation",
+            "otherEntityRelationshipName": "doctor",
+            "relationshipName": "consultations"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "cabinet",
+            "otherEntityRelationshipName": "doctors",
+            "relationshipName": "cabinet",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "cabinet",
+            "otherEntityRelationshipName": "assistants",
+            "relationshipName": "cabinet",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502234800",
+    "entityTableName": "my_user",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

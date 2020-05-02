@@ -1,0 +1,27 @@
+{
+  "mediGoApp": {
+    "medicalCertificat": {
+      "home": {
+        "title": "Medical Certificats",
+        "createLabel": "Create a new Medical Certificat",
+        "createOrEditLabel": "Create or edit a Medical Certificat",
+        "notFound": "No Medical Certificats found"
+      },
+      "created": "A new Medical Certificat is created with identifier {{ param }}",
+      "updated": "A Medical Certificat is updated with identifier {{ param }}",
+      "deleted": "A Medical Certificat is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Medical Certificat {{ id }}?"
+      },
+      "detail": {
+        "title": "Medical Certificat"
+      },
+      "date": "Date",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "days": "Days",
+      "urlId": "Url Id",
+      "consultation": "Consultation"
+    }
+  }
+}

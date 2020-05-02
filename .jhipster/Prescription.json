@@ -1,0 +1,41 @@
+{
+    "name": "Prescription",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "drugLine",
+            "otherEntityRelationshipName": "prescription",
+            "relationshipName": "drugsLines"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "customLine",
+            "otherEntityRelationshipName": "prescription",
+            "relationshipName": "customLines"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "consultation",
+            "otherEntityRelationshipName": "prescriptions",
+            "relationshipName": "consultation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502235200",
+    "entityTableName": "prescription",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

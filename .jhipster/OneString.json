@@ -1,0 +1,29 @@
+{
+    "name": "OneString",
+    "fields": [
+        {
+            "fieldName": "content",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "drug",
+            "otherEntityRelationshipName": "cabinetIds",
+            "relationshipName": "drug",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502235600",
+    "entityTableName": "one_string",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
