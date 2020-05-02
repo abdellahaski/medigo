@@ -1,0 +1,29 @@
+entity MyUser {
+    username String
+    password String
+    email String
+    active Boolean
+    firstName String
+    lastName String
+    cin String
+  	//appointments
+}
+
+
+
+
+entity Appointment {
+
+}
+
+relationship OneToMany {
+Appointment{Patient} to MyUser{appointements}
+}
+
+relationship ManyToOne {
+MyUser{appointements} to Appointment{Patient}
+}
+
+service * with serviceImpl
+// Set an angular suffix
+// angularSuffix * with mySuffix
