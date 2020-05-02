@@ -1,0 +1,28 @@
+{
+  "mediGoApp": {
+    "cabinet": {
+      "home": {
+        "title": "Cabinets",
+        "createLabel": "Créer un nouveau Cabinet",
+        "createOrEditLabel": "Créer ou éditer un Cabinet",
+        "notFound": "Aucun Cabinet trouvé"
+      },
+      "created": "Un nouveau Cabinet a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Cabinet avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Cabinet avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Cabinet {{ id }} ?"
+      },
+      "detail": {
+        "title": "Cabinet"
+      },
+      "name": "Name",
+      "address": "Address",
+      "coordinates": "Coordinates",
+      "speciality": "Speciality",
+      "appointements": "Appointements",
+      "doctors": "Doctors",
+      "assistants": "Assistants"
+    }
+  }
+}

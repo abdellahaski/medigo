@@ -1,0 +1,53 @@
+{
+    "name": "DrugLine",
+    "fields": [
+        {
+            "fieldName": "doseMatin",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "doseMidi",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "doseSoir",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "afterBefore",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "duration",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "drug",
+            "otherEntityRelationshipName": "drugLine",
+            "relationshipName": "drug",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "prescription",
+            "otherEntityRelationshipName": "drugsLines",
+            "relationshipName": "prescription",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200503000100",
+    "entityTableName": "drug_line",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

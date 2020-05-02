@@ -1,0 +1,29 @@
+{
+  "mediGoApp": {
+    "consultation": {
+      "home": {
+        "title": "Consultations",
+        "createLabel": "Créer un nouveau Consultation",
+        "createOrEditLabel": "Créer ou éditer un Consultation",
+        "notFound": "Aucun Consultation trouvé"
+      },
+      "created": "Un nouveau Consultation a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Consultation avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Consultation avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Consultation {{ id }} ?"
+      },
+      "detail": {
+        "title": "Consultation"
+      },
+      "type": "Type",
+      "cost": "Cost",
+      "advance": "Advance",
+      "medicalCertificats": "Medical Certificats",
+      "appointements": "Appointements",
+      "prescriptions": "Prescriptions",
+      "insurances": "Insurances",
+      "doctor": "Doctor"
+    }
+  }
+}

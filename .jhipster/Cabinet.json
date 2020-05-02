@@ -1,0 +1,52 @@
+{
+    "name": "Cabinet",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "coordinates",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "speciality",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "appointment",
+            "otherEntityRelationshipName": "cabinet",
+            "relationshipName": "appointements"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "myUser",
+            "otherEntityRelationshipName": "doctorCabinet",
+            "relationshipName": "doctors"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "myUser",
+            "otherEntityRelationshipName": "assistantCabinet",
+            "relationshipName": "assistants"
+        }
+    ],
+    "changelogDate": "20200502235800",
+    "entityTableName": "cabinet",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

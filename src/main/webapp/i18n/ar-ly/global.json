@@ -7,6 +7,17 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "الكيانات",
+        "myUser": "My User",
+        "appointment": "Appointment",
+        "cabinet": "Cabinet",
+        "consultation": "Consultation",
+        "prescription": "Prescription",
+        "drugLine": "Drug Line",
+        "customLine": "Custom Line",
+        "drug": "Drug",
+        "oneString": "One String",
+        "medicalCertificat": "Medical Certificat",
+        "insurance": "Insurance",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
