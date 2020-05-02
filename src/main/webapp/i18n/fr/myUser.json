@@ -1,0 +1,29 @@
+{
+  "mediGoApp": {
+    "myUser": {
+      "home": {
+        "title": "MyUsers",
+        "createLabel": "Créer un nouveau My User",
+        "createOrEditLabel": "Créer ou éditer un My User",
+        "notFound": "Aucun My User trouvé"
+      },
+      "created": "Un nouveau My User a été créé avec l'identifiant {{ param }}",
+      "updated": "Le My User avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le My User avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le My User {{ id }} ?"
+      },
+      "detail": {
+        "title": "My User"
+      },
+      "username": "Username",
+      "password": "Password",
+      "email": "Email",
+      "active": "Active",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "cin": "Cin",
+      "appointements": "Appointements"
+    }
+  }
+}

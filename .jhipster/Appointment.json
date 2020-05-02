@@ -1,0 +1,24 @@
+{
+    "name": "Appointment",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "myUser",
+            "otherEntityRelationshipName": "appointements",
+            "relationshipName": "patient",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502211700",
+    "entityTableName": "appointment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
