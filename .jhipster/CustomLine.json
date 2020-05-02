@@ -1,0 +1,29 @@
+{
+    "name": "CustomLine",
+    "fields": [
+        {
+            "fieldName": "content",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "prescription",
+            "otherEntityRelationshipName": "customLines",
+            "relationshipName": "prescription",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200503000200",
+    "entityTableName": "custom_line",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

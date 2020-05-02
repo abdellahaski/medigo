@@ -1,0 +1,23 @@
+{
+  "mediGoApp": {
+    "oneString": {
+      "home": {
+        "title": "OneStrings",
+        "createLabel": "Créer un nouveau One String",
+        "createOrEditLabel": "Créer ou éditer un One String",
+        "notFound": "Aucun One String trouvé"
+      },
+      "created": "Un nouveau One String a été créé avec l'identifiant {{ param }}",
+      "updated": "Le One String avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le One String avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le One String {{ id }} ?"
+      },
+      "detail": {
+        "title": "One String"
+      },
+      "content": "Content",
+      "drug": "Drug"
+    }
+  }
+}

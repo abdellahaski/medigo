@@ -1,0 +1,61 @@
+{
+    "name": "Consultation",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cost",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "advance",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "medicalCertificat",
+            "otherEntityRelationshipName": "consultation",
+            "relationshipName": "medicalCertificats"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "appointment",
+            "otherEntityRelationshipName": "consultation",
+            "relationshipName": "appointements"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "prescription",
+            "otherEntityRelationshipName": "consultation",
+            "relationshipName": "prescriptions"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "insurance",
+            "otherEntityRelationshipName": "consultation",
+            "relationshipName": "insurances"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "myUser",
+            "otherEntityRelationshipName": "consultations",
+            "relationshipName": "doctor",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200502235900",
+    "entityTableName": "consultation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
